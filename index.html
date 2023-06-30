@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Varykino Villa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kontakt</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html" >Kontakt</a>
+                  </li>
+                  <li class="nav-item dropdown"> 
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <p> Willkommen in unsere wunderschöne Ferien-Villa im wunderschönen Ort auf Naboo. <br> Machen Sie sich bereit auf schöne Sonnenuntergänge am See mit einem Glas Wein in Hand. Regen gibt es hier nicht, also machen Sie sich bereit für Sonne pur, lange Strandspaziergänge und Sprünge vom hauseigenen Steg in den immer warmen See Magelan</p>
+      </div>
+      <div class="container-fluid2">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/0f/d0/ba/caption.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/e4/7e/6c/e47e6cd64ec3455a38d7679b9fd03a91--italian-villa-outdoor-pool.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.clever-fit.com/app/uploads/2022/10/IMG-4606-1024x768.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <br>
+      <div class="container text-center">
+        <p>Zur Ausstatung der Villa gehört:</p> <br>
+        <div class="table">
+          <div class="col-4">Whirlpool</div>
+          <div class="col-4">Pool</div>
+          <div class="col-4">Sauna</div>
+          <div class="col-4">Kinosaal</div>
+          <div class="col-4">Persönlicher Koch</div>
+          <div class="col-4">Persönliches Fittnessstudio</div>
+        </div>
+      </div>
+      <br>
+      <div class="col-12 btn btn-light btn-lg">
+        <button class="btn btn-bs-tertiary-color" type="button" >Button</button>
+      </div>
+    </main>
+    <footer>
+      <div class="conatiner-fluid3">
+        <adress class="navbar sticky-bottom bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Zum Seiten Anfang</a>
+            <a class="navbar-brand" href="impressum.html">Impressum</a>
+          </div>
+        </adress>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

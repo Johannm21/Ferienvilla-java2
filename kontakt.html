@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Varykino Villa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kontakt</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html" aria-current="page">Kontakt</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ausstattung</a></li>
+                      <li><a class="dropdown-item" href="#">Atraktionen in der Nähe</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <h4>Kontaktformular</h4>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Vorname*" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nachname*" aria-label="Last name">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Vorname*" aria-label="First name" id="Vorname">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nachname*" aria-label="Last name" id="Nachname">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Straße*" aria-label="First name" id="Straße">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Hausnummer*" aria-label="Last name" id="Hausnummer">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Postleitzahl*" aria-label="First name" id="Postleitzahl">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Ort*" aria-label="Last name" id="Ort">
+          </div>
+        </div>
+        <br>
+        <label for="date">Anreisedatum:</label>
+      <input type="date" id="date1" required /><br /><br />
+      <label for="date">Abreisedatum:</label>
+      <input type="date" id="date2" required /><br /><br />
+        <form class="form-floating">
+          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com" id="E-Mail"> 
+          <label for="floatingInputValue">E-Mail*</label>
+        </form>
+        <br>
+        <select class="form-select" aria-label="Default select example" id="Haustier">
+          <option selected>Bringen Sie Haustiere mit?</option>
+          <option value="1">Ja</option>
+          <option value="2">Nein</option>
+        </select>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Erkennen Sie die Datenschutzrichlinen an?
+          </label>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary">Bestätigen</button>
+        <br><br>
+        <iframe clas="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26374.578256583954!2d9.196233196755184!3d45.98551783184303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sVarykino%20Villa!5e0!3m2!1sde!2sde!4v1687777462204!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br><br>
+      <address> 
+        Kontakt: <br>
+        0495/1234567 |
+        Galaxystraße 26 |
+        01726 Theed  |
+        Naboo
+      </address>
+    </main>
+    <footer>
+      <div class="conatiner-fluid3">
+        <adress class="navbar sticky-bottom bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Zum Seiten Anfang</a>
+            <a class="navbar-brand" href="impressum.html">Impressum</a>
+          </div>
+        </adress>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
