@@ -1,6 +1,6 @@
 function handleSubmit(){
-  var Vorname=document.getElementById('Vorname').value;
-  var Nachname=document.getElementById('Nachname').value;
+  var Vorname=document.getElementById('Vname').value;
+  var Nachname=document.getElementById('Nname').value;
   var Straße=document.getElementById('Straße').value;
   var Hausnummer=document.getElementById('Hausnummer').value;
   var Postleitzahl=document.getElementById('Postleitzahl').value;
