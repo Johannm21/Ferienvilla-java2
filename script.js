@@ -1,40 +1,40 @@
 function handleSubmit(){
   var vname=document.getElementById('vname').value;
   var nname=document.getElementById('nname').value;
-  var street=document.getElementById('Straße').value;
-  var hausnummer=document.getElementById('Hausnummer').value;
-  var postleitzahl=document.getElementById('Postleitzahl').value;
-  var ort=document.getElementById('Ort').value;
+  var street=document.getElementById('street').value;
+  var hausnummer=document.getElementById('hausnummer').value;
+  var postleitzahl=document.getElementById('postleitzahl').value;
+  var ort=document.getElementById('ort').value;
   var date1=document.getElementById('date1').value;
   var date2=document.getElementById('date2').value;
-  var mail=document.getElementById('E-Mail').value;
-  var haustier=document.getElementById('Haustier').value;
+  var mail=document.getElementById('floatingInputValue').value;
+  var haustier=document.getElementById('haustier').value;
   var datenschutzerklaerung=document.getElementById('flexCheckIndeterminate').checked;
 
 
 var message=
-  'Vorname: ' +
+  'Vorname: ' + 
   vname +
-  'Nname: ' +
-  nachname +
-  'Straße: ' +
+  '\nNname: ' +
+  nname +
+  '\nStraße: ' +
   street +
-  'Hausnummer: ' +
+  '\nHausnummer: ' +
   hausnummer +
-  'Postleitzahl: ' +
+  '\nPostleitzahl: ' +
   postleitzahl +
-  'Ort: ' +
+  '\nOrt: ' +
   ort +
-  'Anreisedatum: ' +
+  '\nAnreisedatum: ' +
   date1 +
-  'Abreisedatum: ' +
+  '\nAbreisedatum: ' +
   date2 +
-  'E-Mail: ' +
+  '\nE-Mail: ' +
   mail +
-  'Mitgebrachte Haustiere: ' +
+  '\nMitgebrachte Haustiere: ' +
   haustier +
-'Datenschutzerklärung annerkannt: ' + 
+'\nDatenschutzerklärung annerkannt: ' + 
 datenschutzerklaerung
 
-alert(`Folgende Angaben wurden an uns übersandt: ${message} Vielen Dank für Ihre Buchung.`);
+alert(`Folgende Angaben wurden an uns übersandt: \n ${message} \n Vielen Dank für Ihre Buchung.`);
 }

@@ -11,7 +11,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   </head>
   <body>
@@ -78,19 +78,19 @@
         <br>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Straße*" aria-label="First name" id="Straße">
+            <input type="text" class="form-control" placeholder="Straße*" aria-label="First name" id="street">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Hausnummer*" aria-label="Last name" id="Hausnummer">
+            <input type="text" class="form-control" placeholder="Hausnummer*" aria-label="Last name" id="hausnummer">
           </div>
         </div>
         <br>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Postleitzahl*" aria-label="First name" id="Postleitzahl">
+            <input type="text" class="form-control" placeholder="Postleitzahl*" aria-label="First name" id="postleitzahl">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Ort*" aria-label="Last name" id="Ort">
+            <input type="text" class="form-control" placeholder="Ort*" aria-label="Last name" id="ort">
           </div>
         </div>
         <br>
@@ -99,11 +99,11 @@
       <label for="date">Abreisedatum:</label>
       <input type="date" id="date2" required /><br /><br />
         <form class="form-floating">
-          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com" id="E-Mail"> 
+          <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com"> 
           <label for="floatingInputValue">E-Mail*</label>
         </form>
         <br>
-        <select class="form-select" aria-label="Default select example" id="Haustier">
+        <select class="form-select" aria-label="Default select example" id="haustier">
           <option selected>Bringen Sie Haustiere mit?</option>
           <option value="1">Ja</option>
           <option value="2">Nein</option>
@@ -117,7 +117,7 @@
           </label>
         </div>
         <br>
-        <button type="button" class="btn btn-secondary">Bestätigen</button>
+        <button type="button" class="btn btn-secondary" onclick="handleSubmit()">Bestätigen</button>
         <br><br>
         <iframe clas="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26374.578256583954!2d9.196233196755184!3d45.98551783184303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sVarykino%20Villa!5e0!3m2!1sde!2sde!4v1687777462204!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <br><br>
